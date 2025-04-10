@@ -4,11 +4,11 @@
 }
 
 :root {
-  --dark-primary: #082f49;
-  --light-primary: #f0f9ff;
-  --light-secondary: #cbd5e1;
-  --accent: #fde68a;
-  --btn-disabled: #a8a29e;
+  --dark-primary: #1a365d; 
+  --light-primary: #f7fafc; 
+  --light-secondary: #e2e8f0; 
+  --accent: #eab308;
+  --btn-disabled: #94a3b8; /
 }
 
 /*===========================
@@ -26,10 +26,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  padding: 0.5rem;
+  gap: 1.5em;
   height: 100%;
   min-height: 100vh;
-  padding: 2em;
+
 }
 
 .wrapper {
@@ -57,6 +58,16 @@ h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+ width: 65px;
+ height: 65px;
 }
 
 .p--large {
@@ -152,7 +163,7 @@ Game
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1em;
   width: 100%;
-  max-width: 730px;
+  max-width: 300px;
 }
 
 .card-item {
@@ -218,6 +229,10 @@ Screen reader only
 Media queries
 ============================*/
 @media (min-width: 768px) {
+  
+  header {
+padding-top: 3rem;
+}
   h1 {
     font-size: 2.75rem;
   }
@@ -228,21 +243,40 @@ Media queries
   }
 
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
     font-size: 3.25rem;
+    p
   }
 
   .btn--emoji {
     font-size: 4.5rem;
-    height: 125px;
+    height: 300px;
+    width: 100%;
   }
 
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1440px) {
+  
+header {
+padding-top: 3rem;
+}
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    max-width: 1100px;
+  }
+
+  .btn--emoji {
+    height: 320px;
   }
 }

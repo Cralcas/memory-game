@@ -1,6 +1,5 @@
 import Form from "./components/Form";
 import MemoryCard from "./components/MemoryCard";
-
 import AssistiveTechInfo from "./components/AssistiveTechInfo";
 import GameOver from "./components/GameOver";
 import ErrorCard from "./components/ErrorCard";
@@ -24,7 +23,11 @@ export default function App() {
 
   return (
     <main>
-      <h1>Memory</h1>
+      <header>
+        <h1>Memory</h1>
+        <img src="/brain.svg" alt="Image of a brain." className="icon" />
+      </header>
+
       {!isGameOn && !isError && (
         <Form
           handleSubmit={startGame}

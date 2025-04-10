@@ -22,7 +22,7 @@ export default function Form({
   }, [isFirstRender]);
 
   return (
-    <div className="form--container">
+    <div className="form-container">
       <p className="p--regular">
         Customize the game by selecting an emoji category and a number of memory
         cards.

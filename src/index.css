@@ -11,9 +11,7 @@
   --btn-disabled: #94a3b8; /
 }
 
-/*===========================
-Layout
-============================*/
+
 body {
   font-family: "Inter", sans-serif;
   background: var(--dark-primary);
@@ -48,10 +46,6 @@ main {
   box-shadow: 0 0 5px 2px var(--light-primary);
 }
 
-/*===========================
-Typography
-============================*/
-
 h1 {
   color: var(--accent);
   font-size: 2.25rem;
@@ -78,9 +72,6 @@ header {
   font-size: 1.125em;
 }
 
-/*===========================
-Buttons
-============================*/
 .btn {
   background-color: var(--light-primary);
   color: var(--dark-primary);
@@ -113,9 +104,6 @@ Buttons
   box-shadow: 0 0 5px 1px var(--dark-primary);
 }
 
-/*===========================
-Form
-============================*/
 
 .form-container {
   display: flex;
@@ -154,9 +142,7 @@ select:focus {
   box-shadow: 0 0 2px 1px var(--dark-primary);
 }
 
-/*===========================
-Game
-============================*/
+
 .card-container {
   padding-left: 0;
   display: grid;
@@ -170,7 +156,6 @@ Game
   list-style: none;
 }
 
-/* Animated memory card */
 .card-item--selected,
 .card-item--matched,
 .btn--emoji__back--selected,
@@ -208,9 +193,6 @@ Game
   box-shadow: 0 0 5px 2px var(--light-primary);
 }
 
-/*===========================
-Screen reader only
-============================*/
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
@@ -225,9 +207,6 @@ Screen reader only
   white-space: nowrap !important;
 }
 
-/*===========================
-Media queries
-============================*/
 @media (min-width: 768px) {
   
   header {
